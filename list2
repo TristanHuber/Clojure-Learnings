@@ -1,0 +1,12 @@
+(= [1 2 3 4] (conj '(2 3 4) 1))
+
+(= [:a :b :c] (list :a :b :c) (vec'(:a :b :c)) (vector :a :b :c))
+
+(= [1 2 3 4] (conj [1 2 3] 4))
+
+(= #{:a :b :c :d} (set'(:a :a :b :c :c :c :d :d)))
+
+(= 20 (:b {:a 10, :b 20, :c 30}))
+
+;; should evaluate to true
+;; what is the signficance of :?
