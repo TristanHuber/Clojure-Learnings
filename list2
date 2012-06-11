@@ -8,5 +8,7 @@
 
 (= 20 (:b {:a 10, :b 20, :c 30}))
 
+(= {:a 1, ;b 2, :c 3} (conj {:a 1} [:b 2] [:c 3]))
+
 ;; should evaluate to true
 ;; what is the signficance of :?
